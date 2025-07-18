@@ -1,0 +1,22 @@
+{
+  "name": "orbital-reentry-website",
+  "version": "1.0.0",
+  "description": "website for calculating and displaying orbital reentry information",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaytonORogers/orbital-reentry-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PaytonORogers/orbital-reentry-website/issues"
+  },
+  "homepage": "https://github.com/PaytonORogers/orbital-reentry-website#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
