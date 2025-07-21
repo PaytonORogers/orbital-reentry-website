@@ -18,5 +18,12 @@
   "homepage": "https://github.com/PaytonORogers/orbital-reentry-website#readme",
   "devDependencies": {
     "live-server": "^1.2.2"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.0",
+    "fetch-cookie": "^3.1.0",
+    "jest": "^30.0.4",
+    "node-fetch": "^3.3.2",
+    "tle.js": "^5.0.1"
   }
 }

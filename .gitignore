@@ -1,5 +1,5 @@
-# Password Files
-password.txt
+# Username & Password Files
+.env
 
 # Logs
 logs

@@ -2,10 +2,163 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Space-Track.org API Test</title>
+  <link rel="stylesheet" href="./index.css"/>
 </head>
 <body>
-  
+  <h1 id="title"><pre> ▄▄   ▄▄ ▄▄▄▄▄▄ ▄▄    ▄    ▄▄   ▄▄ ▄▄▄▄▄▄ ▄▄▄▄▄▄  ▄▄▄▄▄▄▄    ▄     ▄ ▄▄▄ ▄▄▄▄▄▄▄ ▄▄   ▄▄ ▄▄▄▄▄▄▄ ▄▄▄▄▄▄▄ 
+█  █▄█  █      █  █  █ █  █  █▄█  █      █      ██       █  █ █ ▄ █ █   █       █  █ █  █       █       █
+█       █  ▄   █   █▄█ █  █       █  ▄   █  ▄    █    ▄▄▄█  █ ██ ██ █   █  ▄▄▄▄▄█  █▄█  █    ▄▄▄█  ▄▄▄▄▄█
+█       █ █▄█  █       █  █       █ █▄█  █ █ █   █   █▄▄▄   █       █   █ █▄▄▄▄▄█       █   █▄▄▄█ █▄▄▄▄▄ 
+█       █      █  ▄    █  █       █      █ █▄█   █    ▄▄▄█  █       █   █▄▄▄▄▄  █   ▄   █    ▄▄▄█▄▄▄▄▄  █
+█ ██▄██ █  ▄   █ █ █   █  █ ██▄██ █  ▄   █       █   █▄▄▄   █   ▄   █   █▄▄▄▄▄█ █  █ █  █   █▄▄▄ ▄▄▄▄▄█ █
+█▄█   █▄█▄█ █▄▄█▄█  █▄▄█  █▄█   █▄█▄█ █▄▄█▄▄▄▄▄▄██▄▄▄▄▄▄▄█  █▄▄█ █▄▄█▄▄▄█▄▄▄▄▄▄▄█▄▄█ █▄▄█▄▄▄▄▄▄▄█▄▄▄▄▄▄▄█
+</pre></h1>
+  <div class="top">
+    <h></h>
+    <h><pre>           .       .                   .       .      .     .      .
+          .    .         .    .            .     ______
+      .           .             .               ////////
+                .    .              .  .      /////////     .    .
+           .             .    .            ./////////    .
+    .                 .                   /////////
+       .       .    .                   /////////       .     .   .
+                      .    .    .     ///////// .     .
+     .    .                         //`,/////                .
+             .                 .  //  /  \/   .
+  .                      .   .  //\` '   ,_\     .     .
+          .           .       //////\ , /   \                 .    .
+                       .    ///////// \|  '  |    .
+      .        .          ///////// .   \ _ /          .
+                        /////////                              .
+                 .   ./////////     .     .
+         .           --------   .                  ..             .
+  .               .        .         .                       .
+  </div>
+  <div class="grid-wrapper">
+    <div class="left"><pre>                '
+            *          .
+                   *       '
+              *                *
+
+
+
+
+
+   *   '*
+           *
+                *
+                       *
+               *
+                     *
+
+         .                      .
+         .                      ;
+         :                  - --+- -
+         !           .          !
+         |        .             .
+         |_         +
+      ,  | `.
+--- --+-<#>-+- ---  --  -
+      `._|_,'
+         T
+         |
+         !
+         :         . : 
+         .       *</pre></div>
+    <div class="center">
+      <p>This website uses publicly available data from the United States Space Force to tell you when there's 
+        a chance of seeing satellites reenter the atmosphere. When they're burning up, they look like shooting stars, or man made wishes!
+      </p>
+      <p>
+        In order to tell you what you can see, I need to know where you are. No information is stored.
+      </p>
+      <fieldset>
+        <div>
+          <div class="lat"><label for="lat">Lat:</label></div>
+          <div><input type="text" id="lat" name="lat"></div>
+        </div>
+        <div>
+          <div class="long"><label for="long">Long:</label></div>
+          <div><input type="text" id="long" name="long"></div>
+        </div>
+        <div class="enter">
+        <button id="enter">Enter</button>
+        </div>
+      </fieldset>
+      <p>Today's Re-Entering Objects are...</p>
+      <button id="refresh">Refresh Table</button>
+      <table class="steelBlueCols">
+        <thead>
+          <tr>
+            <th>SATNO</th>
+            <th>REENTRY TIME</th>
+          </tr>
+        </thead>
+        <tbody id="reentry objects">
+          <tr>
+            <td>cell1_1</td>
+            <td>cell2_1</td>
+          </tr>
+          <tr>
+            <td>cell1_2</td>
+            <td>cell2_2</td>
+          </tr>
+          <tr>
+            <td>cell1_3</td>
+            <td>cell2_3</td>
+          </tr>
+          <tr>
+            <td>cell1_4</td>
+            <td>cell2_4</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="right"><pre>
+         !         
+         !         
+         ^         
+        / \        
+       /___\       
+      |=   =|      
+      |     |      
+      |     |      
+      |     |      
+      |     |      
+      |     |      
+      |     |      
+      |     |      
+      |     |      
+      |     |      
+     /|##!##|\     
+    / |##!##| \    
+   /  |##!##|  \   
+  |  / ^ | ^ \  |  
+  | /  ( | )  \ |  
+  |/   ( | )   \|  
+      ((   ))      
+     ((  :  ))     
+     ((  :  ))     
+      ((   ))      
+       (( ))       
+        ( )        
+         .         
+         .         
+         .         </pre></div>
+  </div>
+  <div class="bottom">
+    <h></h>
+    <h><pre>       *  .  . *       *    .        .        .   *    ..
+ .    *        .   ###     .      .        .            *
+    *.   *        #####   .     *      *        *    .
+  ____       *  ######### *    .  *      .        .  *   .
+ /   /\  .     ###\#|#/###   ..    *    .      *  .  ..  *
+/___/  ^8/      ###\|/###  *    *            .      *   *
+|   ||%%(        # }|{  #
+|___|,  \\  ejm    }|{</pre></h>
+    <h></h>
+  </div>
+<script src="index.js" type="module">console.log("testing")</script>
 </body>
 </html>
